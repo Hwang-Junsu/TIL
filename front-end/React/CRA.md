@@ -15,3 +15,12 @@ yarn create react-app [원하는 이름]
 
 ![react-init](https://teamsparta.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F9b4c3fd1-425d-4ed5-928f-db693d061f7c%2F%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2021-08-27_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_3.15.48.png?table=block&id=6b9041dc-3cd6-4463-b6f7-fd6a937bd857&spaceId=83c75a39-3aba-4ba4-a792-7aefe4b07895&width=410&userId=&cache=v2)   
 👉 VSCode 폴더에서의 React 기본 구조
+
+-node_modules : 설치한 패키지들이 저장되는 곳   
+-src : 실제로 우리가 짜는 코드들이 들어가는 곳   
+-package.json : 리액트 프로젝트의 설정 파일   
+   
+실행을 위해서는 터미널에 아래 코드를 작성한다.
+```bash
+yarn start
+```
