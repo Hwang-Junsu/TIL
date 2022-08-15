@@ -53,5 +53,7 @@ minus.addEventListener("click", () => countStore.dispatch({ type: MINUS }));
 const onChange = () => {
   number.innerText = countStore.getState();
 };
+
+store.subscribe(() => console.log(store.getState()));
 ```
-- subscribe는 state의 변화를 보여준다.
+- subscribe는 state의 변화에 반응한다.
