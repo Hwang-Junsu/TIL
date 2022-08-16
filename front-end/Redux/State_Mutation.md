@@ -1,4 +1,4 @@
-# Never Mutate State
+# Never Mutate State ⭐⭐⭐
 - store를 수정할 수 있는 유일한 방법은 action으로 reducer에 메시지를 보내는 것.
 - muatation은 예를 들어 array에 push나 pop을 통해 변경시키는 것을 말함.
 - state를 수정하려면, 새로운 object나 array를 만들어 return 해야 함.
