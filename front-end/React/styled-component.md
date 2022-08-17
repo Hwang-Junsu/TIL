@@ -30,6 +30,94 @@ const Circle = styled(Box)`
 ```
 - styled(컴포넌트) 형식으로 컴포넌트의 모든 속성을 상속받고, 일부만 변경해줄 수 있다.
 
+```javascript
+const Father = styled.div`
+  display: flex;
+`;
 
-# styled-component 
+const Btn = styled.button`
+  color: white;
+  background-color: tomato;
+  border: 0;
+  border-radius: 15px;
+`;
+
+const Link = styled(Btn)``;
+
+const Input = styled.input.attrs({ required: true, minLength: 10 })`
+  background-color: tomato;
+`;
+
+function App() {
+  return (
+    <Father as="header">
+      <Input />
+      <Input />
+      <Input />
+    </Father>
+  );
+}
+```
+- as 속성을 이용해 html 태그 속성을 바꿔줄 수 있다.
+- styled.tag.attrs({property: value})를 통해서 필요한 속성들을 지정해 줄 수 있다.
+
+
+# Animation
+```javascript
+import styled, { keyframes } from "styled-components";
+
+const Wrapper = styled.div`
+  display: flex;
+`;
+
+const rotationAnimation = keyframes`
+0%{
+  transform:rotate(0deg);
+  border-radius: 0px;
+}
+50% {
+  border-radius: 100px;
+}
+100% {
+  transform:rotate(360deg);
+  border-radius: 0px;
+}
+`;
+
+const Box = styled.div`
+  height: 200px;
+  width: 200px;
+  background-color: tomato;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: ${rotationAnimation} 1s linear infinite;
+`;
+```
+- keyframs를 import해주면, css에서 사용하던 것처럼 똑같이 애니메이션을 사용할 수 있다.
+
+# Pseudo Selector
+```javascript
+const Box = styled.div`
+  height: 200px;
+  width: 200px;
+  background-color: tomato;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: ${rotationAnimation} 1s linear infinite;
+
+  span {
+    font-size: 36px;
+    &:hover {
+      font-size: 60px;
+    }
+  }
+`;
+```
+- component 내부의 태그 속성에 대해 css를 부여할 수 있다.
+- &를 사용하여 자기자신을 참조할 수 있다.
+- 
+
+# styled-component DOC 
 https://styled-components.com/docs
