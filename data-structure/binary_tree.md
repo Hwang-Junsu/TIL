@@ -1,7 +1,7 @@
 # 1. Binary_tree?
 이진트리는 컴퓨터 응용에서 가장 많이 활용되는 아주 중요한 트리구조이다. 노드의 유한 집합으로서 공백이거나 루트와
 두 개의 분리된 이진트리인 경우 왼쪽 서브트리와 오른쪽 서브트리로 구성된다.
-![https://t1.daumcdn.net/cfile/tistory/99E6B23E5B339DBB33)
+![tree](https://t1.daumcdn.net/cfile/tistory/99E6B23E5B339DBB33)
 
 # 2. 이진트리의 연결 표현
 ```javascript
