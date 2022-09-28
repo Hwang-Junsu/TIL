@@ -83,5 +83,24 @@ clearErrors('username');
 onClick={() => clearErrors(["firstName", "lastName"])}
 ```
 
+## setValue: (name: string, value: unknown, config?: Object) => void
+필드 값을 업데이트   
+이 함수을 사용하면 등록된 필드의 값을 동적으로 설정하고 form state를 확인하고 업데이트하는 옵션을 가질 수 있습니다. 동시에 불필요한 rerender를 피하려고 합니다.   
+```
+setValue('firstname', 'hello');
+onClick={() => setValue("firstName", "Bill")}
+```
+https://react-hook-form.com/api/useform/setvalue
+
+
+## reset: (values?: Record, options?: Record) => void
+form state와 value 재설정   
+전체 form state 또는 form state의 일부를 재설정합니다.   
+```
+reset() // form 전체 리셋
+reset({ email: "" }); // form에서 특정 필드만 리셋
+```
+https://react-hook-form.com/api/useform/reset
+
 ### 라인 끝에 커서 포커싱하기 (VSCode단축키)
 option(alt)+shift+i
