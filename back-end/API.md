@@ -11,3 +11,7 @@ API는 컴퓨터나 컴퓨터 프로그램 사이의 연결이다. 즉, 프로�
 
 Web API
 https://developer.mozilla.org/ko/docs/Web/API
+
+# REST API
+REST API는 특정 URL로 요청을 통해 이루어진다.   
+사람들이 이해하기 쉽고 직관적이다.
