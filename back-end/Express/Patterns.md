@@ -48,6 +48,7 @@ function init() {
 
 init();
 ```
+- route 관련, middleware 관련을 분리하고 정리할 수 있는 것이 tip.
 
 # Service Pattern
 - 유지보수를 위해 함수와 라우터 부분을 따로 적용한다.
