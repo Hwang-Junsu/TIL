@@ -41,3 +41,12 @@ return (
 }
 ```
 https://swr.vercel.app/docs/with-nextjs#pre-rendering-with-default-data
+
+## withIronSessionSsr
+
+```
+export function withSessionSsr(handler) {
+return withIronSessionSsr(handler, sessionOptions);
+}
+```
+https://github.com/vvo/iron-session#nextjs-withironsessionssrhandler-ironoptions--req-incomingmessage-res-serverresponse--ironoptions--promiseironoptions
