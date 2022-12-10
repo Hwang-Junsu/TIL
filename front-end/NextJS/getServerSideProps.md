@@ -49,4 +49,4 @@ export function withSessionSsr(handler) {
 return withIronSessionSsr(handler, sessionOptions);
 }
 ```
-https://github.com/vvo/iron-session#nextjs-withironsessionssrhandler-ironoptions--req-incomingmessage-res-serverresponse--ironoptions--promiseironoptions
+https://github.com/vvo/iron-session#nextjs-withironsessionssrhandler-ironoptions--req-incomingmessage-res-serverresponse--ironoptions--promiseironoptions   
